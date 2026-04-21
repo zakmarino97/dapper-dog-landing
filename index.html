@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#0a0a0a" />
+<meta name="description" content="Luxury mobile dog grooming in Jupiter, FL. Licensed & insured. One-on-one care, right at your door. $25 off your first groom." />
+<title>The Dapper Dog — Luxury Mobile Dog Grooming in Jupiter, FL</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '3031982777192255');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3031982777192255&ev=PageView&noscript=1"
+alt="" /></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --bg:#0a0a0a;
+    --bg-2:#111;
+    --surface:#141414;
+    --gold:#C9A84C;
+    --gold-2:#E4C676;
+    --gold-soft:rgba(201,168,76,.12);
+    --gold-line:rgba(201,168,76,.35);
+    --text:#f5f1e8;
+    --muted:#9a948a;
+    --radius:14px;
+    --shadow:0 20px 60px rgba(0,0,0,.6);
+  }
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55;
+    font-size:17px;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    overflow-x:hidden;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    padding:56px 0 72px;
+    text-align:center;
+    overflow:hidden;
+    isolation:isolate;
+  }
+  .hero::before{
+    content:"";
+    position:absolute;
+    top:-30%;
+    left:50%;
+    width:780px;height:780px;
+    transform:translateX(-50%);
+    background:radial-gradient(circle,rgba(201,168,76,.22) 0%,rgba(201,168,76,.08) 35%,transparent 65%);
+    filter:blur(10px);
+    z-index:-1;
+    pointer-events:none;
+  }
+  .hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+      radial-gradient(1px 1px at 20% 30%,rgba(201,168,76,.4),transparent 50%),
+      radial-gradient(1px 1px at 80% 20%,rgba(201,168,76,.3),transparent 50%),
+      radial-gradient(1px 1px at 60% 80%,rgba(201,168,76,.25),transparent 50%);
+    z-index:-1;
+    opacity:.5;
+  }
+  .logo{
+    font-size:22px;
+    font-weight:600;
+    letter-spacing:.02em;
+    color:var(--gold);
+    margin-bottom:40px;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+  }
+  .eyebrow{
+    text-transform:uppercase;
+    letter-spacing:.24em;
+    font-size:11px;
+    color:var(--gold);
+    margin-bottom:18px;
+    font-weight:600;
+  }
+  h1{
+    font-size:clamp(32px,7vw,56px);
+    font-weight:700;
+    line-height:1.08;
+    letter-spacing:-.02em;
+    margin:0 auto 20px;
+    max-width:14ch;
+    background:linear-gradient(180deg,#fff 0%,#d8d1bf 100%);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+  }
+  h1 .accent{
+    background:linear-gradient(180deg,var(--gold-2) 0%,var(--gold) 100%);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+  }
+  .sub{
+    color:var(--muted);
+    font-size:16px;
+    max-width:30ch;
+    margin:0 auto 36px;
+    line-height:1.6;
+  }
+  .sub .dot{color:var(--gold);margin:0 8px;opacity:.6}
+
+  .cta{
+    display:inline-block;
+    background:linear-gradient(180deg,var(--gold-2) 0%,var(--gold) 100%);
+    color:#171004;
+    font-weight:700;
+    font-size:17px;
+    letter-spacing:.01em;
+    padding:18px 30px;
+    border-radius:999px;
+    border:1px solid rgba(255,255,255,.15);
+    box-shadow:
+      0 10px 30px rgba(201,168,76,.35),
+      inset 0 1px 0 rgba(255,255,255,.4);
+    transition:transform .15s ease,box-shadow .15s ease;
+    cursor:pointer;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .cta:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(201,168,76,.45),inset 0 1px 0 rgba(255,255,255,.4)}
+  .cta:active{transform:translateY(0)}
+
+  .code-hint{
+    margin-top:14px;
+    font-size:13px;
+    color:var(--muted);
+    letter-spacing:.02em;
+  }
+  .code-hint code{
+    color:var(--gold);
+    font-weight:600;
+    background:var(--gold-soft);
+    padding:2px 8px;
+    border-radius:6px;
+    font-family:-apple-system,SF Mono,Menlo,monospace;
+    font-size:12.5px;
+    letter-spacing:.04em;
+  }
+
+  /* ---------- TRUST BAR ---------- */
+  .trust{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+    padding:28px 0;
+    border-top:1px solid rgba(255,255,255,.06);
+    border-bottom:1px solid rgba(255,255,255,.06);
+    margin:20px 0 0;
+  }
+  .trust-item{
+    text-align:center;
+    padding:6px 4px;
+  }
+  .trust-item .ico{font-size:24px;margin-bottom:8px;line-height:1}
+  .trust-item .lbl{
+    font-size:12.5px;
+    color:var(--muted);
+    letter-spacing:.02em;
+    line-height:1.35;
+  }
+
+  /* ---------- SECTIONS ---------- */
+  section{padding:72px 0}
+  .section-head{text-align:center;margin-bottom:44px}
+  .section-head .eyebrow{margin-bottom:12px}
+  h2{
+    font-size:clamp(26px,5vw,36px);
+    font-weight:700;
+    letter-spacing:-.015em;
+    line-height:1.15;
+  }
+
+  /* ---------- HOW IT WORKS ---------- */
+  .steps{
+    display:grid;
+    gap:16px;
+  }
+  .step{
+    position:relative;
+    background:var(--surface);
+    border:1px solid rgba(255,255,255,.05);
+    border-radius:var(--radius);
+    padding:26px 22px 26px 76px;
+    overflow:hidden;
+  }
+  .step::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(90deg,var(--gold-soft) 0%,transparent 60%);
+    pointer-events:none;
+  }
+  .step-num{
+    position:absolute;
+    left:22px;top:50%;
+    transform:translateY(-50%);
+    width:40px;height:40px;
+    border-radius:50%;
+    background:linear-gradient(180deg,var(--gold-2) 0%,var(--gold) 100%);
+    color:#171004;
+    font-weight:700;
+    display:flex;align-items:center;justify-content:center;
+    font-size:16px;
+    box-shadow:0 6px 16px rgba(201,168,76,.3);
+  }
+  .step h3{
+    font-size:16.5px;
+    font-weight:600;
+    color:var(--text);
+    letter-spacing:-.005em;
+  }
+  .step p{
+    margin-top:4px;
+    font-size:14px;
+    color:var(--muted);
+  }
+
+  /* ---------- PHOTO / ABOUT ---------- */
+  .about{
+    text-align:center;
+    background:linear-gradient(180deg,transparent 0%,rgba(201,168,76,.04) 50%,transparent 100%);
+  }
+  .photo-frame{
+    width:200px;height:200px;
+    margin:0 auto 28px;
+    border-radius:50%;
+    padding:4px;
+    background:linear-gradient(135deg,var(--gold-2) 0%,var(--gold) 50%,#8a7332 100%);
+    box-shadow:0 20px 50px rgba(201,168,76,.25);
+  }
+  .photo-inner{
+    width:100%;height:100%;
+    border-radius:50%;
+    background:
+      radial-gradient(circle at 50% 35%,#2a2418 0%,#151108 60%,#0a0a0a 100%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    color:var(--gold);
+    font-weight:600;
+    letter-spacing:.04em;
+    font-size:13px;
+    text-transform:uppercase;
+    position:relative;
+    overflow:hidden;
+  }
+  .photo-inner::before{
+    content:"👤";
+    font-size:72px;
+    opacity:.35;
+    margin-bottom:6px;
+    filter:grayscale(1);
+  }
+  .about-name{
+    font-size:13px;
+    color:var(--gold);
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    font-weight:600;
+    margin-bottom:10px;
+  }
+  .about-bio{
+    max-width:52ch;
+    margin:0 auto;
+    color:#d8d1bf;
+    font-size:17px;
+    line-height:1.7;
+  }
+  .about-bio em{
+    font-style:normal;
+    color:var(--gold);
+    font-weight:500;
+  }
+
+  /* ---------- OFFER ---------- */
+  .offer-wrap{padding-top:20px}
+  .offer{
+    position:relative;
+    background:
+      linear-gradient(180deg,rgba(201,168,76,.12) 0%,rgba(201,168,76,.04) 100%),
+      var(--surface);
+    border:1px solid var(--gold-line);
+    border-radius:20px;
+    padding:44px 26px;
+    text-align:center;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+  }
+  .offer::before{
+    content:"";
+    position:absolute;
+    top:-40%;left:50%;
+    width:500px;height:500px;
+    transform:translateX(-50%);
+    background:radial-gradient(circle,rgba(201,168,76,.25),transparent 60%);
+    pointer-events:none;
+  }
+  .offer-gift{
+    font-size:34px;
+    margin-bottom:10px;
+    position:relative;
+  }
+  .offer h2{
+    color:var(--gold);
+    margin-bottom:10px;
+    position:relative;
+  }
+  .offer-sub{
+    color:#d8d1bf;
+    font-size:16px;
+    margin-bottom:28px;
+    position:relative;
+  }
+  .offer-sub code{
+    color:var(--gold);
+    background:rgba(0,0,0,.4);
+    padding:3px 10px;
+    border-radius:6px;
+    font-family:-apple-system,SF Mono,Menlo,monospace;
+    font-size:13.5px;
+    font-weight:600;
+    letter-spacing:.05em;
+    border:1px solid var(--gold-line);
+  }
+  .offer .cta{position:relative}
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    padding:40px 0 60px;
+    text-align:center;
+    color:var(--muted);
+    font-size:13px;
+    border-top:1px solid rgba(255,255,255,.05);
+    margin-top:20px;
+  }
+  footer .biz{color:#d8d1bf;margin-bottom:6px;font-weight:500}
+  footer .copy{opacity:.65;font-size:12px}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (min-width:720px){
+    .steps{grid-template-columns:repeat(3,1fr)}
+    .step{padding:28px 22px 28px 80px}
+    section{padding:90px 0}
+    .hero{padding:80px 0 90px}
+    .offer{padding:60px 40px}
+  }
+  @media (min-width:1024px){
+    body{font-size:18px}
+  }
+
+  /* subtle entrance */
+  @media (prefers-reduced-motion:no-preference){
+    .hero>*{animation:rise .7s ease-out both}
+    .hero .logo{animation-delay:.05s}
+    .hero .eyebrow{animation-delay:.1s}
+    .hero h1{animation-delay:.15s}
+    .hero .sub{animation-delay:.25s}
+    .hero .cta{animation-delay:.35s}
+    .hero .code-hint{animation-delay:.4s}
+  }
+  @keyframes rise{
+    from{opacity:0;transform:translateY(10px)}
+    to{opacity:1;transform:translateY(0)}
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div class="logo">🐾 The Dapper Dog</div>
+    <div class="eyebrow">Jupiter, FL</div>
+    <h1>Luxury Mobile Dog Grooming — <span class="accent">Right At Your Door</span></h1>
+    <p class="sub">Jupiter, FL &amp; South Florida<span class="dot">•</span>Licensed &amp; Insured<span class="dot">•</span>One-on-One Care</p>
+    <a href="https://booking.moego.pet/ol/TheDapperDogProfessionalMobileGrooming/landing"
+       class="cta"
+       id="hero-cta"
+       target="_blank" rel="noopener">
+       Book Now — $25 Off First Groom
+    </a>
+    <div class="code-hint">Use code <code>DAPPER25</code> at checkout</div>
+
+    <div class="trust">
+      <div class="trust-item"><div class="ico">🏆</div><div class="lbl">Licensed<br/>&amp; Insured</div></div>
+      <div class="trust-item"><div class="ico">🐕</div><div class="lbl">One-on-One<br/>Care</div></div>
+      <div class="trust-item"><div class="ico">🚐</div><div class="lbl">We Come<br/>To You</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">How It Works</div>
+      <h2>Three simple steps</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Book Online in 60 Seconds</h3>
+        <p>Pick your date and time. No phone tag, no hassle.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Aaron Arrives At Your Door</h3>
+        <p>Fully-equipped grooming van, right to your driveway.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Your Dog Looks &amp; Feels Amazing</h3>
+        <p>Spa-quality groom with the calm, one-on-one attention they deserve.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / PHOTO -->
+<section class="about">
+  <div class="wrap">
+    <div class="photo-frame">
+      <div class="photo-inner" aria-label="Meet Aaron photo placeholder">Meet Aaron</div>
+    </div>
+    <div class="about-name">Owner &amp; Licensed Groomer</div>
+    <p class="about-bio">
+      I am Aaron, owner and licensed groomer. Every dog I groom gets my full, undivided attention.
+      Your pet is <em>not just another client</em> — they are family.
+    </p>
+  </div>
+</section>
+
+<!-- OFFER -->
+<section class="offer-wrap">
+  <div class="wrap">
+    <div class="offer">
+      <div class="offer-gift">🎁</div>
+      <h2>First Time? Get $25 Off</h2>
+      <p class="offer-sub">Use code <code>DAPPER25</code> when booking online</p>
+      <a href="https://booking.moego.pet/ol/TheDapperDogProfessionalMobileGrooming/landing"
+         class="cta"
+         id="offer-cta"
+         target="_blank" rel="noopener">
+        Book My First Groom →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="biz">The Dapper Dog Professional Mobile Grooming | Jupiter, FL</div>
+    <div class="copy">© 2026 The Dapper Dog</div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var fire = function(){
+      if (typeof fbq === 'function') {
+        fbq('track', 'Lead');
+      }
+    };
+    document.querySelectorAll('#hero-cta, #offer-cta').forEach(function(el){
+      el.addEventListener('click', fire, {passive:true});
+    });
+  })();
+</script>
+
+</body>
+</html>
